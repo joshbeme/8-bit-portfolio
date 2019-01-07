@@ -1,0 +1,44 @@
+
+.container{
+  font-family: "Press Start 2P";
+
+  .title{
+    background-color: #2a75bb !important;
+
+  }
+
+  &::before{
+    background-color: #2a75bb;
+  }
+}
+.personalInfo{
+  display: flex;
+  justify-content: space-evenly
+}
+.personalInfo-container-img{
+  display: flex;
+  justify-content: center;
+}
+.personalInfo-info{
+  position: relative;
+  width: 300px;
+  height: 170px;
+  left: 20px;
+  top: 70px;
+  font-size: 1.5rem;
+}
+.personalInfo-img{
+  width: 350px;
+  height: 350px;
+  position: relative;
+}
+.personalInfo-container{
+  position: relative;
+}
+.personalInfo-statsContainer{
+ display: grid;
+ grid-template-columns: 1fr 1fr 1fr;
+position: relative;
+width: 30%;
+grid-gap: 50px;
+}

@@ -34,14 +34,15 @@ class Index extends Component {
   render() {
     return (
       <Container classname="personalInfo container">
+            {/* <h1 className="title">Personal Info</h1> */}
+
         <Container classname="personalInfo-container-img">
           <Picture src={profilePic} onClick={this.cycleDialogue} />
           <Info>{dialogue[this.state.dialogue]}</Info>
         </Container>
         <ContainerInfo/>
 
-        {/* <Container classname="personalInfo-container container">
-        </Container> */}
+        
       </Container>
     );
   }

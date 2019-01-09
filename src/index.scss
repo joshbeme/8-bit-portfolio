@@ -1,44 +1,227 @@
+@import'./styles/pause.scss';
+$backgroundColor: #2a75bb ;
 
-.container{
+a{
+  &:hover{
+    cursor: pointer;
+  }
+}
+.App{
+  background-color: $backgroundColor ;
+  z-index: 0;
+  margin: 20px;
+
+}
+.balloon{
+  z-index: 2;
+}
+html{
+  background-color: $backgroundColor ;
+
+}
+#root{
+  background-color: $backgroundColor ;
+
+}
+.container {
   font-family: "Press Start 2P";
+  z-index: 1;
 
-  .title{
-    background-color: #2a75bb !important;
-
+  .title {
+    background-color: $backgroundColor !important;
   }
 
-  &::before{
-    background-color: #2a75bb;
+  &::before {
+    background-color: $backgroundColor;
   }
 }
-.personalInfo{
+.personalInfo {
   display: flex;
-  justify-content: space-evenly
+  justify-content: space-evenly;
+  z-index: 1;
+
+  .personalInfo-container-img {
+    display: flex;
+    justify-content: center;
+
+    .personalInfo-img {
+      width: 350px;
+      height: 350px;
+      position: relative;
+      left: 60px;
+
+    }
+    .personalInfo-bubble {
+      position: relative;
+      width: 200px;
+      height: 100px;
+      left: 0px;
+      top: 70px;
+      font-size: 0.9rem;
+    }
+  }
+
+  .personalInfo-statsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    position: relative;
+    grid-gap: 50px;
+    width: 500px;
+    .infoStats {
+      font-size: 0.8rem;
+    }
+  }
 }
-.personalInfo-container-img{
-  display: flex;
-  justify-content: center;
+
+@media screen and (max-width: 1300px) {
+  .personalInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .personalInfo-container-img {
+      display: flex;
+      justify-content: center;
+
+      .personalInfo-img {
+        width: 350px;
+        height: 350px;
+        position: relative;
+        left: 60px;
+
+      }
+      .personalInfo-bubble {
+        position: relative;
+        width: 200px;
+        left: -20px;
+
+        top: 70px;
+      }
+    }
+
+    .personalInfo-statsContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      position: relative;
+      justify-content: center;
+      width: 100%;
+      grid-gap: 50px;
+      padding: {
+        top: 100px;
+        left: 200px;
+        right: 200px;
+      }
+      .infoStats {
+        text-align: center;
+      }
+    }
+  }
 }
-.personalInfo-info{
-  position: relative;
-  width: 300px;
-  height: 170px;
-  left: 20px;
-  top: 70px;
-  font-size: 1.5rem;
+
+@media screen and (max-width: 750px) {
+  .App{
+    
+    margin: 0px;
+  
+  }
+  .personalInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .personalInfo-container-img {
+      display: flex;
+      justify-content: center;
+
+      .personalInfo-img {
+        width: 250px;
+        height: 250px;
+        position: relative;
+        left: 40px;
+
+      }
+      .personalInfo-bubble {
+        position: relative;
+        width: 120px;
+        height: 60px;
+        left: 0px;
+        top: 70px;
+        font-size: 0.5rem;
+      }
+    }
+
+    .personalInfo-statsContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      position: relative;
+      justify-content: center;
+      width: 100%;
+      grid-gap: 50px;
+      padding: {
+        top: 100px;
+        left: 200px;
+        right: 200px;
+      }
+      .infoStats {
+        text-align: center;
+        // font-size: 0.5rem;
+      }
+    }
+  }
 }
-.personalInfo-img{
-  width: 350px;
-  height: 350px;
-  position: relative;
-}
-.personalInfo-container{
-  position: relative;
-}
-.personalInfo-statsContainer{
- display: grid;
- grid-template-columns: 1fr 1fr 1fr;
-position: relative;
-width: 30%;
-grid-gap: 50px;
+
+@media screen and (max-width: 550px) {
+  .title {
+    font-size: 1.5rem;
+  }
+  .container{
+    padding: 15px;
+  }
+  .personalInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .personalInfo-container-img {
+      display: flex;
+      justify-content: center;
+      .personalInfo-img {
+        width: 175px;
+        height: 175px;
+        position: relative;
+        left:30px;
+
+      }
+      .personalInfo-bubble {
+        position: relative;
+        width: 35%;
+        height: 50px;
+        left: 0px;
+        top: 10px;
+        font-size: 0.5rem;
+        padding:3px ;
+        .textbubble{
+          
+        }
+      }
+    }
+
+    .personalInfo-statsContainer {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      position: relative;
+      justify-content: center;
+      width: 100%;
+      grid-gap: 10px;
+      padding: {
+        top: 50px;
+        left: 20px;
+        right: 20px;
+      }
+      .infoStats {
+        text-align: center;
+        font-size: 0.5rem;
+      }
+    }
+  }
 }

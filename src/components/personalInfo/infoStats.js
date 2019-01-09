@@ -2,7 +2,7 @@ import React from "react";
 
 const Stats = props => {
   return (
-    <div className="info">
+    <div className="infoStats">
       {props.icon}
       
       <h4 >{props.header}</h4>

@@ -1,0 +1,39 @@
+.pause{
+    position: fixed;
+    z-index: 2;
+    right: 10px;
+    top: 10px;
+}
+.pauseText{
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.pauseMenu{
+    position: fixed;
+    z-index: 2 !important;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white !important;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+  
+    text-align: center;
+
+    &::after{
+        background-color: white !important;
+
+    }
+}
+.entireModal{
+    left: 0%;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 2 !important;
+    background-color: rgba(0, 0, 0, 0.616)
+}

@@ -1,5 +1,6 @@
 @import'./styles/pause.scss';
 @import'./styles/stats.scss';
+@import'./styles/quests.scss';
 $backgroundColor: #2a75bb ;
 
 a{
@@ -38,7 +39,7 @@ html{
 }
 .personalInfo {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-around;
   z-index: 1;
 
   .personalInfo-container-img {

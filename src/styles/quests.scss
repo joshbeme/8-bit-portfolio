@@ -1,0 +1,48 @@
+icon {
+  z-index: 2;
+}
+.quests-container {
+  display: flex;
+  justify-content: center;
+}
+
+.quests-index {
+  position: relative;
+  width: 470px;
+  height: 590px;
+}
+
+.quests-display {
+  height: 590px;
+  width: 590px;
+}
+.quests-indexContainer {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+
+
+}
+.quests-indexText {
+    display: flex;
+    flex-direction: column;
+  width: 100%;
+  position: relative;
+  text-align: left;
+}
+.quests-indexTextBody {
+  position: relative;
+  font-size: 0.9rem;
+  width: 100%;
+}
+.quests-indexIcon {
+  padding-right: 15px;
+  position: relative;
+  z-index: 1;
+}
+.quests-display {
+  &::after {
+    background-color: black;
+  }
+}

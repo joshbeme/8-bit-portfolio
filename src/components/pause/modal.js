@@ -74,7 +74,6 @@ class Modal extends Component {
         <div className="container pauseMenu">
           <h2 style={{ textDecoration: "underline" }}>Paused</h2>
           <Option
-            touch={this.touch}
             click={this.props.click}
             hover={this.resumeHandler}
             makeRef={resume}
@@ -83,39 +82,36 @@ class Modal extends Component {
           <Option
             to="#personalInfo"
             click={this.props.click}
-            touch={this.touch}
             hover={this.infoHandler}
             makeRef={info}
             name="Info"
           />
           <Option
             to="#stats"
-            touch={this.touch}
             click={this.props.click}
             hover={this.statsHandler}
             makeRef={stats}
             name="Stats"
           />
           <Option
-            touch={this.touch}
+          to="#quests"
             hover={this.questsHandler}
             makeRef={quests}
+            click={this.props.click}
             name="Quests"
           />
           <Option
-            touch={this.touch}
             hover={this.mailboxHandler}
             makeRef={mailbox}
+            click={this.props.click}
             name="Mailbox"
           />
         </div>
         <Sound
-          ignoreMobileRestrictions={true}
           onError={err => console.error(err)}
           url={menu}
-          volume={25}
+          volume={10}
           playStatus={this.state.play}
-          onFinishedPlaying={this.onSound}
         />
       </div>
     );

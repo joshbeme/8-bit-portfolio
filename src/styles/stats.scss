@@ -1,0 +1,62 @@
+#stats {
+}
+.Stats {
+}
+#stats-skills {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+.stats-skill {
+  padding: 10px;
+}
+.stats-howMany {
+  right: 0px;
+  top: 50px;
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+}
+.stats-howManyStars {
+  top: -50px;
+  right: 55px;
+}
+.stats-hr {
+  position: absolute;
+  width: 100px;
+  transform: rotate(-45deg);
+}
+.stats-howManyNum {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+}
+
+@media screen and (max-width: 1300px) {
+  #stats-skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 0px;
+    grid-row-gap: 10px;
+  }
+  .stats-howMany {
+    
+  }
+}
+@media screen and (max-width: 950px) {
+    #stats-skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-gap: 0px;
+        grid-row-gap: 10px;
+        padding-top:40px;
+      }
+      .stats-howMany {
+right: 0%;          
+        
+        top: 40px;
+        position: absolute;
+        display: flex;
+        transform: scale(0.6) translateX(0%);
+      }
+}

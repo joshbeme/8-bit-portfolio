@@ -33,7 +33,7 @@ class Index extends Component {
 
   render() {
     return (
-      <Container classname="personalInfo container">
+      <Container id="personalInfo" classname="personalInfo container">
             {/* <h1 className="title">Personal Info</h1> */}
 
         <Container classname="personalInfo-container-img">

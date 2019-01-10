@@ -8,8 +8,8 @@ import ContainerInfo from './statsContainer';
 const dialogue = [
   "WELCOME",
   "Enjoy my portfolio",
-  "I've hidden a few secrets",
-  "See if you can find them."
+  "...",
+  "bye."
 ];
 
 class Index extends Component {

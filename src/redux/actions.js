@@ -2,7 +2,7 @@
 export const changeColor = color => ({
     type: "CHANGE_COLOR",
     payload: {
-        content
+        content: color
     }
 })
 

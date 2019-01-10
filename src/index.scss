@@ -4,6 +4,9 @@
 @import'./styles/mailbox.scss';
 $backgroundColor: #2a75bb ;
 
+html {
+  scroll-behavior: smooth;
+}
 a{
   &:hover{
     cursor: pointer;

@@ -101,6 +101,7 @@ class Modal extends Component {
             name="Quests"
           />
           <Option
+          to="#mailbox"
             hover={this.mailboxHandler}
             makeRef={mailbox}
             click={this.props.click}

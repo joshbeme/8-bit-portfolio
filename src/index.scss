@@ -4,6 +4,13 @@
 @import'./styles/mailbox.scss';
 $backgroundColor: #2a75bb ;
 
+.portfolio{
+  padding:{
+    top:10px;
+    bottom:10px;
+    left:10px;
+  }
+}
 html {
   scroll-behavior: smooth;
 }

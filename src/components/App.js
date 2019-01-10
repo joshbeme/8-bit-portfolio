@@ -10,8 +10,8 @@ class App extends Component {
     return (
       <div className="App">
       <Pause></Pause>
-      <div className="portfolio"></div>
-      <h1 className="title" >Portfolio</h1>
+      <div className=""></div>
+      <h1 className="title portfolio" >Portfolio</h1>
        <PersonalInfo/>
        {/* <button className="btn is-primary"  style={{width: "200px"}}>Stuff</button> */}
       <Stats/>

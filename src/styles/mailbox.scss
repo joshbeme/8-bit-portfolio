@@ -1,0 +1,27 @@
+#mailbox {
+  position: relative;
+  height: 840px;
+}
+.mailboxImg {
+  position: absolute;
+  height: 400px;
+  top: 460px;
+  right: 0;
+}
+.cloud1 {
+  position: absolute;
+  left: 300px;
+  width: 100px;
+  top: 300px;
+}
+.cloud2 {
+  position: absolute;
+  width: 200px;
+  left: 700px;
+  top: 100px;
+}
+.cloud1 {
+  position: absolute;
+  transform: scale(3);
+  left: 300px;
+}

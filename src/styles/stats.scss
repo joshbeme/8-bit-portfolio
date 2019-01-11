@@ -44,6 +44,10 @@
   }
 }
 @media screen and (max-width: 950px) {
+  .mailboxTitle{
+    font-size: 1.5rem;
+    padding-left: 5px;
+  }
     #stats-skills {
         display: grid;
         grid-template-columns: 1fr 1fr ;
@@ -59,4 +63,10 @@ right: 0%;
         display: flex;
         transform: scale(0.6) translateX(0%);
       }
+}
+@media screen and (max-width: 375px) {
+  .stats-skill {
+    padding: 10px;
+    font-size: 0.8rem;
+  }
 }

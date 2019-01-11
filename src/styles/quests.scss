@@ -9,11 +9,12 @@ icon {
 .quests-index {
   position: relative;
   width: 470px;
-  height: 590px;
+  height: 550px;
+ 
 }
 
 .quests-display {
-  height: 590px;
+  height: 550px;
   width: 590px;
 }
 .quests-indexContainer {
@@ -43,6 +44,48 @@ icon {
 }
 .quests-display {
   &::after {
-    background-color: black;
+    background-color: white;
   }
+}
+.quests-displayDescTitle{
+  display: flex;
+  justify-content: space-between;
+}
+.quests-lists{
+  padding-bottom: 20px;
+}
+.quest-button{
+  position: absolute;
+  bottom: 20px;
+}
+
+@media screen and (max-width: 925px) {
+  .quests-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .quests-index {
+    position: relative;
+    width: 100%;
+    height: 390px;
+   
+  }
+  
+  .quests-display {
+    height: 500px;
+    width: 100%;
+  }
+  .quests-indexTextBody {
+    position: relative;
+    font-size: 0.5rem;
+    width: 100%;
+  }
+  .quests-indexTextHead {
+    font-size: 0.6rem;
+
+  }
+  .quests-lists{
+    font-size: 0.9rem;
+  }
+ 
 }

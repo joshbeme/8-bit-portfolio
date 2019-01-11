@@ -64,3 +64,40 @@ align-items: center;
    bottom: -70px;
   transform: scale(.7)
 }
+
+@media screen and (max-width: 950px) {
+  #mailbox {
+  }
+  .mailbox-info{
+    position: relative;
+    top: 30px;
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .cloud2 {
+    position: absolute;
+    width: 100px;
+    left: 60%;
+    top: 70px;
+  }
+  .cloud1 {
+    position: absolute;
+    width: 90px;
+    left: 10%;
+  }
+  .cat{
+    position: absolute;
+    z-index: 2;
+     right:68px;
+     bottom: -70px;
+    transform: scale(.7)
+  }
+  .mailboxImg {
+    position: absolute;
+    height: 150px;
+    top: 500px;
+    right: 50px;
+  }
+}

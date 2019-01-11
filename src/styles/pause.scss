@@ -1,13 +1,18 @@
 .pause{
     position: fixed;
     z-index: 2;
-    right: 10px;
+    width: 70px;
+    height: 75px;
+    right: 18px;
     top: 10px;
 }
 .pauseText{
     &:hover{
         cursor: pointer;
     }
+}
+.pauseIcon{
+    transform: scale(2);
 }
 
 .pauseMenu{
@@ -46,4 +51,18 @@ a{
     z-index: 2 !important;
     background-color: rgba(0, 0, 0, 0.616);
     overflow: hidden;
+}
+
+@media screen and (max-width: 700px) {
+    .pauseIcon{
+        transform: scale(1);
+    }
+    .pause{
+        position: fixed;
+        z-index: 2;
+        width: 45px;
+        height: 50px;
+        right: 10px;
+        top: 10px;
+    }
 }

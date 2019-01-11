@@ -1,8 +1,8 @@
-@import'./styles/pause.scss';
-@import'./styles/stats.scss';
-@import'./styles/quests.scss';
-@import'./styles/mailbox.scss';
-$backgroundColor: #2a75bb ;
+@import'./pause.scss';
+@import'./stats.scss';
+@import'./quests.scss';
+@import'./mailbox.scss';
+$backgroundColor: #4b95db ;
 
 .portfolio{
   padding:{
@@ -10,6 +10,65 @@ $backgroundColor: #2a75bb ;
     bottom:10px;
     left:10px;
   }
+}
+.LandingPage{
+  color: white;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  height: 100%;
+  width: 100vw;
+  background-color: black;
+  z-index: 5;
+  transition: 0.7s;
+  overflow: hidden;
+}
+.landingText{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.none{
+  display: none;
+}
+.disapeer{
+  opacity: 0.00;
+  
+}
+.next{
+  position: absolute;
+  transform: scale(0.25);
+  top:35px;
+  left: 15px;
+}
+@keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0.0;
+  }
+}
+.blink {
+  animation: blink 1s step-start 0s infinite;
+  -webkit-animation: blink 1s step-start 0s infinite;
+}
+@keyframes blonk {
+  50% {
+    opacity: 0.0;
+  }
+}
+@-webkit-keyframes blonk {
+  50% {
+    opacity: 0.0;
+  }
+}
+.blonk {
+  animation: blonk 2s step-start 0s infinite;
+  -webkit-animation: blonk 2s step-start 0s infinite;
 }
 html {
   scroll-behavior: smooth;
@@ -81,7 +140,7 @@ html{
     grid-gap: 50px;
     width: 500px;
     .infoStats {
-      font-size: 0.8rem;
+      font-size: 1rem;
     }
   }
 }
@@ -132,6 +191,17 @@ html{
 }
 
 @media screen and (max-width: 750px) {
+  .next{
+    position: absolute;
+    transform: scale(0.17);
+    top:-4px;
+    left: -15px;
+  }
+  .landingText{
+    text-align: center;
+    font-size: 1.2rem;
+  }
+
   .App{
     
     margin: 0px;
@@ -184,6 +254,12 @@ html{
 }
 
 @media screen and (max-width: 550px) {
+  .next{
+    position: absolute;
+    transform: scale(0.2);
+    top:-13px;
+    left: -25px;
+  }
   .title {
     font-size: 1.5rem;
   }

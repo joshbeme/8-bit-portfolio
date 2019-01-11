@@ -70,7 +70,7 @@ class Index extends Component {
           onClick={this.pause}
           className="btn  pause is-error"
         >
-          <IoMdPause />
+          <IoMdPause  className="pauseIcon" />
         </button>
         <Modal
           click={this.pause}

@@ -39,8 +39,11 @@
   display: flex;
 align-items: center;
   justify-content: center;
+  
 }
+
 .link{
+  transform: translateX(-10px)
 
   &:hover{
     cursor: pointer;
@@ -48,8 +51,10 @@ align-items: center;
 }
 .a{
   color: #333;
-
-  transform: translateX(-10px)
+  transform: translateX(-10px);
+  &:hover{
+    color: #333;
+  }
 
 }
 .cat{

@@ -13,9 +13,7 @@ class App extends Component {
       display: true
     };
     this.click = this.click.bind(this);
-    this.clicker = this.clicker.bind(this);
   }
-  clicker() {}
   click() {
     this.setState({
       landing: "disapeer"
@@ -41,7 +39,6 @@ class App extends Component {
         <div className="" />
         <h1 className="title portfolio">Portfolio</h1>
         <PersonalInfo />
-        {/* <button className="btn is-primary"  style={{width: "200px"}}>Stuff</button> */}
         <Stats />
         <Quests />
         <Mailbox />

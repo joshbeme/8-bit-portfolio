@@ -47,7 +47,7 @@ class Index extends Component {
 
         <Container classname="personalInfo-container-img">
           <Picture src={profilePic} onClick={this.cycleDialogue} />
-          <TalkBubble class={this.state.blink} display={this.state.display}>
+          <TalkBubble click={this.cycleDialogue} class={this.state.blink} display={this.state.display}>
             {dialogue[this.state.dialogueCycle]}
           </TalkBubble>
         </Container>

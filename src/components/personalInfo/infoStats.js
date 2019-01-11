@@ -5,8 +5,8 @@ const Stats = props => {
     <div className="infoStats">
       {props.icon}
       
-      <h4 >{props.header}</h4>
-      <hr />
+      <h4 style={{textDecoration: "underline"}} >{props.header}</h4>
+      
       <p >{props.children}</p>
     </div>
   );

@@ -51,7 +51,7 @@ class Index extends Component {
   render() {
     return (
       <div id="quests" className="container with-title">
-        <h1 className="title">Quests</h1>
+        <h1 style={{textAlign: "center", textDecoration: "underline", paddingBottom: "5px"}} className="">Quests</h1>
         <div className="quests-container">
           <IndexText
             zoomClick={() => this.zoom(0)}

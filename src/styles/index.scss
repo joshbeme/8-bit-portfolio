@@ -6,8 +6,7 @@ $backgroundColor: #4b95db ;
 
 .portfolio{
   padding:{
-    top:10px;
-    bottom:10px;
+   
     left:10px;
   }
 }
@@ -67,8 +66,8 @@ $backgroundColor: #4b95db ;
   }
 }
 .blonk {
-  animation: blonk 2s step-start 0s infinite;
-  -webkit-animation: blonk 2s step-start 0s infinite;
+  animation: blonk 1.5s step-start 0s infinite;
+  -webkit-animation: blonk 1.5s step-start 0s infinite;
 }
 html {
   scroll-behavior: smooth;
@@ -109,26 +108,27 @@ html{
 }
 .personalInfo {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   z-index: 1;
 
   .personalInfo-container-img {
     display: flex;
     justify-content: center;
-
+    padding-right: 20px;
     .personalInfo-img {
       width: 350px;
       height: 350px;
       position: relative;
-      left: 60px;
+      
 
     }
     .personalInfo-bubble {
       position: relative;
       width: 200px;
       height: 100px;
-      left: 0px;
+      left: -60px;
       top: 70px;
+      
       font-size: 0.9rem;
     }
   }
@@ -140,6 +140,7 @@ html{
     grid-gap: 50px;
     width: 500px;
     .infoStats {
+      text-align: center;
       font-size: 1rem;
     }
   }
@@ -159,13 +160,13 @@ html{
         width: 350px;
         height: 350px;
         position: relative;
-        left: 60px;
+        
 
       }
       .personalInfo-bubble {
         position: relative;
         width: 200px;
-        left: -20px;
+        left: -80px;
 
         top: 70px;
       }
@@ -220,14 +221,14 @@ html{
         width: 250px;
         height: 250px;
         position: relative;
-        left: 40px;
+        left: 0px;
 
       }
       .personalInfo-bubble {
         position: relative;
         width: 120px;
         height: 60px;
-        left: 0px;
+        left: -40px;
         top: 70px;
         font-size: 0.5rem;
       }
@@ -278,14 +279,14 @@ html{
         width: 175px;
         height: 175px;
         position: relative;
-        left:30px;
+        left:10px;
 
       }
       .personalInfo-bubble {
         position: relative;
         width: 35%;
         height: 50px;
-        left: 0px;
+        left: -20px;
         top: 10px;
         font-size: 0.5rem;
         padding:3px ;

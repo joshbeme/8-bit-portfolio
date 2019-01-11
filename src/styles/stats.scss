@@ -14,8 +14,10 @@
   right: 0px;
   top: 50px;
   position: relative;
+  display: -webkit-box;
   display: flex;
-  justify-content: flex-end;
+  -webkit-box-pack: end;
+          justify-content: flex-end;
 }
 .stats-howManyStars {
   top: -50px;
@@ -24,7 +26,8 @@
 .stats-hr {
   position: absolute;
   width: 100px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 .stats-howManyNum {
   position: absolute;
@@ -60,8 +63,10 @@ right: 0%;
         
         top: 40px;
         position: absolute;
+        display: -webkit-box;
         display: flex;
-        transform: scale(0.6) translateX(0%);
+        -webkit-transform: scale(0.6) translateX(0%);
+                transform: scale(0.6) translateX(0%);
       }
 }
 @media screen and (max-width: 375px) {

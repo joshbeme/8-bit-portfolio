@@ -25,18 +25,25 @@
 .mailbox-info{
   position: relative;
   top: 30px;
+  display: -webkit-box;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
 }
 .mailbox-github, .mailbox-linkedin, .mailbox-gmail{
   position: relative;
   padding: 30px;
   color: #333;
+  display: -webkit-box;
   display: flex;
 width: 520px;
-transform: translateX(-50%);
-align-items: center;
+-webkit-transform: translateX(-50%);
+        transform: translateX(-50%);
+-webkit-box-align: center;
+        align-items: center;
 left: 50%;  
 }
 
@@ -49,7 +56,8 @@ left: 50%;
 }
 .a{
   color: #333;
-  transform: translateX(-10px);
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
   &:hover{
     color: #333;
   }
@@ -60,7 +68,8 @@ left: 50%;
   z-index: 2;
    right:219px;
    bottom: -70px;
-  transform: scale(.7)
+  -webkit-transform: scale(.7);
+          transform: scale(.7)
 }
 
 @media screen and (max-width: 950px) {
@@ -70,9 +79,13 @@ left: 50%;
     position: relative;
     top: 30px;
     font-size: 0.5rem;
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: center;
+            justify-content: center;
   }
   .cloud2 {
     position: absolute;
@@ -89,10 +102,13 @@ left: 50%;
     position: relative;
     padding: 30px;
     color: #333;
+    display: -webkit-box;
     display: flex;
   width: 300px;
-  transform: translateX(-50%);
-  align-items: center;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-box-align: center;
+          align-items: center;
   left: 50%;  
   }
   .cat{
@@ -100,7 +116,8 @@ left: 50%;
     z-index: 2;
      right:68px;
      top: 364px;
-    transform: scale(.7)
+    -webkit-transform: scale(.7);
+            transform: scale(.7)
   }
   .mailboxImg {
     position: absolute;

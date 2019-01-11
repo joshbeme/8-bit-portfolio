@@ -2,8 +2,10 @@ icon {
   z-index: 2;
 }
 .quests-container {
+  display: -webkit-box;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+          justify-content: center;
 }
 
 .quests-index {
@@ -18,16 +20,22 @@ icon {
   width: 590px;
 }
 .quests-indexContainer {
+  display: -webkit-box;
   display: flex;
-  align-items: center;
-  justify-content: flex-start;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+          justify-content: flex-start;
   width: 100%;
 
 
 }
 .quests-indexText {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
   width: 100%;
   position: relative;
   text-align: left;
@@ -48,8 +56,10 @@ icon {
   }
 }
 .quests-displayDescTitle{
+  display: -webkit-box;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
 }
 .quests-lists{
   padding-bottom: 20px;
@@ -61,8 +71,11 @@ icon {
 
 @media screen and (max-width: 925px) {
   .quests-container {
+    display: -webkit-box;
     display: flex;
-    flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
   }
   .quests-index {
     position: relative;

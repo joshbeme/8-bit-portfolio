@@ -28,7 +28,7 @@ class Index extends Component {
           <Skill stars={2}>Brain.js</Skill>
           <Skill stars={2}>App Engine</Skill>
           <Skill stars={1}>Docker</Skill>
-          <Skill stars={1}>GCP</Skill>
+          <Skill stars={4}>Gulp</Skill>
 
         </div>
       </div>

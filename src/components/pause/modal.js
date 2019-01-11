@@ -8,7 +8,7 @@ class Modal extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      play: Sound.status.STOPPED
+      play: null
     };
     this.resume = React.createRef();
     this.info = React.createRef();

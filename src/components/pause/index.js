@@ -39,15 +39,15 @@ class Index extends Component {
     if (window.addEventListener)window.addEventListener("DOMMouseScroll", preventDefault, false);
     window.onwheel = preventDefault; // modern standard
     window.onmousewheel = document.onmousewheel = preventDefault; // older browsers, IE
-    document.addEventListener('touchstart', (event)=>{ event.preventDefault();
-        event.stopPropagation();}, false ) ; // mobile
+    window.ontouchmove  = preventDefault; // mobile
     document.onkeydown = preventDefaultForScrollKeys;
   }
   enableScroll() {
     if (window.removeEventListener)window.removeEventListener("DOMMouseScroll", preventDefault, false);
     window.onmousewheel = document.onmousewheel = null;
     window.onwheel = null;
-    document.removeEventListener('touchstart', ()=>{return null}, false ) ;    document.onkeydown = null;
+    window.ontouchmove = null; 
+    document.onkeydown = null;
   }
   componentDidMount(){
 

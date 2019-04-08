@@ -13,7 +13,8 @@ const Attribute = props => {
         {props.children}
           
         </ul>
-        <a href={props.link} target="_blank" className="btn is-success quest-button">Click Me!</a>
+        <a href={props.link} target="_blank" className="btn is-success quest-button" rel='noopener noreferrer'
+>Click Me!</a>
       </div>
   
   );

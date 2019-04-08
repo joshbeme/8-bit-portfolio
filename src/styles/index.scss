@@ -1,16 +1,20 @@
-@import'./pause.scss';
-@import'./stats.scss';
-@import'./quests.scss';
-@import'./mailbox.scss';
-$backgroundColor: #4b95db ;
+@import "./pause.scss";
+@import "./stats.scss";
+@import "./quests.scss";
+@import "./mailbox.scss";
+$backgroundColor: #4b95db;
+$firstColor: black;
+$secondColor: black;
 
-.portfolio{
-  padding:{
-   
-    left:10px;
-  }
+.portfolio {
+  text-align: center;
+  padding: {
+    left: 10px;
+  };
+  color: white;
+ 
 }
-.LandingPage{
+.LandingPage {
   color: white;
   position: fixed;
   left: 0px;
@@ -23,35 +27,34 @@ $backgroundColor: #4b95db ;
   transition: 0.7s;
   overflow: hidden;
 }
-.landingText{
+.landingText {
   position: absolute;
   left: 50%;
   top: 50%;
   -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
-.none{
+.none {
   display: none;
 }
-.disapeer{
-  opacity: 0.00;
-  
+.disapeer {
+  opacity: 0;
 }
-.next{
+.next {
   position: absolute;
   -webkit-transform: scale(0.25);
-          transform: scale(0.25);
-  top:35px;
+  transform: scale(0.25);
+  top: 35px;
   left: 15px;
 }
 @keyframes blink {
   50% {
-    opacity: 0.0;
+    opacity: 0;
   }
 }
 @-webkit-keyframes blink {
   50% {
-    opacity: 0.0;
+    opacity: 0;
   }
 }
 .blink {
@@ -60,12 +63,12 @@ $backgroundColor: #4b95db ;
 }
 @keyframes blonk {
   50% {
-    opacity: 0.0;
+    opacity: 0;
   }
 }
 @-webkit-keyframes blonk {
   50% {
-    opacity: 0.0;
+    opacity: 0;
   }
 }
 .blonk {
@@ -75,67 +78,86 @@ $backgroundColor: #4b95db ;
 html {
   scroll-behavior: smooth;
 }
-a{
-  &:hover{
+a {
+  &:hover {
     cursor: pointer;
   }
 }
-.App{
-  background-color: $backgroundColor ;
+.App {
+  background-image: -webkit-linear-gradient($firstColor, $secondColor, $backgroundColor);
+  background-image: linear-gradient($firstColor, $secondColor, $backgroundColor);
   z-index: 0;
-  margin: 20px;
-
+  margin: {
+    left:20px;
+    right: 20px;
+  }
 }
-.balloon{
+.balloon {
   z-index: 2;
 }
-html{
-  background-color: $backgroundColor ;
-
+html {
+  background-color: $backgroundColor;
 }
-#root{
-  background-color: $backgroundColor ;
-
+#root {
+  padding-top: 20px;
+  top:0%;
+  background-image: -webkit-linear-gradient($firstColor, $secondColor, $backgroundColor);
+  background-image: linear-gradient($firstColor, $secondColor, $backgroundColor);
 }
 .container {
   font-family: "Press Start 2P";
   z-index: 1;
-
   .title {
-    background-color: $backgroundColor !important;
+    background-color: rgb(0, 0, 0) !important;
   }
+&::after{
+  border-color: white !important;
 
+}
   &::before {
-    background-color: $backgroundColor;
+    background-color: rgba(0, 0, 0, 0);
   }
 }
 .personalInfo {
+  color: white;
+
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;
-          justify-content: center;
+  justify-content: center;
   z-index: 1;
 
   .personalInfo-container-img {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     padding-right: 20px;
     .personalInfo-img {
       width: 350px;
       height: 350px;
       position: relative;
-      
+      background-color: white;
+      &::after{
+    
+        background-color: white !important;
 
     }
+    &::before{
+        background-color: rgb(0, 0, 0) !important;
+        border-radius: 4px;
+
+    }
+    }
     .personalInfo-bubble {
+      color: black;
+
       position: relative;
       width: 200px;
       height: 100px;
       left: -60px;
       top: 70px;
-      
+
       font-size: 0.9rem;
     }
   }
@@ -158,23 +180,21 @@ html{
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
 
     .personalInfo-container-img {
       display: -webkit-box;
       display: flex;
       -webkit-box-pack: center;
-              justify-content: center;
+      justify-content: center;
 
       .personalInfo-img {
         width: 350px;
         height: 350px;
         position: relative;
-        
-
       }
       .personalInfo-bubble {
         position: relative;
@@ -190,7 +210,7 @@ html{
       grid-template-columns: 1fr 1fr 1fr;
       position: relative;
       -webkit-box-pack: center;
-              justify-content: center;
+      justify-content: center;
       width: 100%;
       grid-gap: 50px;
       padding: {
@@ -206,44 +226,49 @@ html{
 }
 
 @media screen and (max-width: 750px) {
-  .next{
+  .portfolio {
+    text-align: center;
+    padding: {
+      left: 10px;
+    };
+    color: white;
+   font-size: 1.2rem;
+  }
+  .next {
     position: absolute;
     -webkit-transform: scale(0.17);
-            transform: scale(0.17);
-    top:-4px;
+    transform: scale(0.17);
+    top: -4px;
     left: -15px;
   }
-  .landingText{
+  .landingText {
     text-align: center;
     font-size: 1.2rem;
   }
 
-  .App{
-    
+  .App {
     margin: 0px;
-  
   }
   .personalInfo {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
 
     .personalInfo-container-img {
       display: -webkit-box;
       display: flex;
       -webkit-box-pack: center;
-              justify-content: center;
+      justify-content: center;
 
       .personalInfo-img {
         width: 250px;
         height: 250px;
         position: relative;
         left: 0px;
-
       }
       .personalInfo-bubble {
         position: relative;
@@ -260,7 +285,7 @@ html{
       grid-template-columns: 1fr 1fr 1fr;
       position: relative;
       -webkit-box-pack: center;
-              justify-content: center;
+      justify-content: center;
       width: 100%;
       grid-gap: 50px;
       padding: {
@@ -277,39 +302,38 @@ html{
 }
 
 @media screen and (max-width: 550px) {
-  .next{
+  .next {
     position: absolute;
     -webkit-transform: scale(0.2);
-            transform: scale(0.2);
-    top:-13px;
+    transform: scale(0.2);
+    top: -13px;
     left: -25px;
   }
   .title {
     font-size: 1.5rem;
   }
-  .container{
+  .container {
     padding: 15px;
   }
   .personalInfo {
     display: -webkit-box;
     display: flex;
     -webkit-box-pack: center;
-            justify-content: center;
+    justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
+    flex-direction: column;
 
     .personalInfo-container-img {
       display: -webkit-box;
       display: flex;
       -webkit-box-pack: center;
-              justify-content: center;
+      justify-content: center;
       .personalInfo-img {
         width: 175px;
         height: 175px;
         position: relative;
-        left:10px;
-
+        left: 10px;
       }
       .personalInfo-bubble {
         position: relative;
@@ -318,9 +342,8 @@ html{
         left: -20px;
         top: 10px;
         font-size: 0.5rem;
-        padding:3px ;
-        .textbubble{
-          
+        padding: 3px;
+        .textbubble {
         }
       }
     }
@@ -330,7 +353,7 @@ html{
       grid-template-columns: 1fr 1fr 1fr;
       position: relative;
       -webkit-box-pack: center;
-              justify-content: center;
+      justify-content: center;
       width: 100%;
       grid-gap: 10px;
       padding: {

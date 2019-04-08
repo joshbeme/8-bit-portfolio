@@ -5,6 +5,7 @@
     height: 75px;
     right: 18px;
     top: 10px;
+    
 }
 .pauseText{
     &:hover{
@@ -17,13 +18,13 @@
 }
 
 .pauseMenu{
+    
     position: fixed;
     z-index: 2 !important;
     left: 50%;
     top: 50%;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
-    background-color: white !important;
     display: -webkit-box;
     display: flex;
     -webkit-box-orient: vertical;
@@ -34,7 +35,13 @@
     text-align: center;
 
     &::after{
+    
         background-color: white !important;
+
+    }
+    &::before{
+        background-color: rgba(0, 0, 0, 0.63) !important;
+        border-radius: 4px;
 
     }
 }
@@ -54,7 +61,7 @@ a{
     height: 100%;
     position: fixed;
     z-index: 2 !important;
-    background-color: rgba(0, 0, 0, 0.616);
+    background-color: rgba(0, 0, 0, 0.63);
     overflow: hidden;
 }
 

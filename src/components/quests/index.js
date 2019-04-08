@@ -12,23 +12,25 @@ class Index extends Component {
   }
   zoom(n) {
     const arr = [
-      <Attr link="https://react-gallery-zoom.herokuapp.com" title="React Zoom Gallery" percent="100%">
+      <Attr link="https://www.npmjs.com/package/react-zoom-gallery" title="React Zoom Gallery" percent="100%">
         <li className="quests-lists">Image gallery</li>
         <li className="quests-lists">Uses animation to simulate 3d space</li>
         <li className="quests-lists">Stack based architecture</li>
         <li className="quests-lists">Intuitive API</li>
       </Attr>,
-      <Attr link="http://encore-225023.appspot.com/" title="Encore GC" percent="90%">
+      <Attr link="https://bitbucket.org/joshbeme/encore" title="Encore GC" percent="100%">
         <li className="quests-lists">Developed and designed entire site</li>
         <li className="quests-lists">Enforces testability using Redux</li>
         <li className="quests-lists">Backend has RESTful API</li>
         <li className="quests-lists">Server-side rendering using Next.js</li>
         <li className="quests-lists">SEO optimized</li>
       </Attr>,
-      <Attr link="https://test-game-demo.herokuapp.com/" title="Game Demo" percent="?">
-        <li className="quests-lists">Fun little side scroller</li>
-        <li className="quests-lists">Helps me learn game development</li>
-        <li className="quests-lists">Uses express to serve static assets</li>
+      <Attr link="https://github.com/hackla-engage/engage-client" title="Engage Town" percent="70%">
+        <li className="quests-lists">Open Source Project</li>
+        <li className="quests-lists">Front End uses React, Redux, and Sass</li>
+        <li className="quests-lists">Helps citizens engage with town hall</li>
+        <li className="quests-lists">Currently being beta tested with city of Santa Monica</li>
+
       </Attr>,
       <Attr link="#personalInfo" title="Portfolio" percent="100%">
         <li className="quests-lists">React SPA</li>
@@ -51,12 +53,12 @@ class Index extends Component {
   render() {
     return (
       <div id="quests" className="container with-title">
-        <h1 style={{textAlign: "center", textDecoration: "underline", paddingBottom: "5px"}} className="">Quests</h1>
+        <h1 style={{textAlign: "center", textDecoration: "underline", paddingBottom: "5px"}} className="quests-header">Quests</h1>
         <div className="quests-container">
           <IndexText
             zoomClick={() => this.zoom(0)}
             encoreClick={() => this.zoom(1)}
-            gameClick={() => this.zoom(2)}
+            engageClick={() => this.zoom(2)}
             bitClick={() => this.zoom(3)}
           />
           <div className="quests-display container">{this.state.display}</div>

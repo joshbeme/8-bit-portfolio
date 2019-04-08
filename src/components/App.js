@@ -16,7 +16,8 @@ class App extends Component {
   }
   click() {
     this.setState({
-      landing: "disapeer"
+      landing: "disapeer",
+      display: false
     });
     setTimeout(
       () =>
@@ -26,7 +27,13 @@ class App extends Component {
       700
     );
   }
+  componentDidMount(){
+    document.querySelector('body').style.overflow = 'hidden'
+  }
   render() {
+    if(!this.state.display) document.querySelector('body').style.overflow = 'auto'
+
+
     return (
       <div className="App">
         <div
@@ -37,11 +44,12 @@ class App extends Component {
         </div>
         <Pause />
         <div className="" />
-        <h1 className="title portfolio">Portfolio</h1>
+        <h1 className=" portfolio">Portfolio</h1>
         <PersonalInfo />
         <Stats />
         <Quests />
         <Mailbox />
+
       </div>
     );
   }
